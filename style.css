@@ -1,0 +1,244 @@
+* {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color: white;
+
+}
+
+.pokedex {
+    height: 800px;
+    width: 1161px;
+    background-image: url(/IMG-20230726-WA0107.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.display {
+    background: url(/background\ ambiente.jpg) no-repeat;
+    background-size: 100% 105%;
+    display: flex;
+    overflow: hidden;
+
+    position: absolute;
+    top: 257px;
+    left: 130px;
+    background-color: black;
+    width: 366px;
+    height: 247px;
+    border-radius: 13px;
+    transition: 0.5s;
+
+}
+
+.btnReset {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    border-radius: 400px;
+    top: 521px;
+    left: 162px;
+}
+
+.btnReset:active {
+    filter: brightness(80%);
+}
+
+.powerOn {
+    box-shadow: inset 0 0 30px 15px #555;
+    opacity: 1;
+    /*transform: scale(1);*/
+    transition: 0.5s;
+}
+
+.powerOff {
+    opacity: 0;
+    /* transform: scale(0);*/
+    transition: 0.5s;
+}
+
+.displayDir {
+    display: flex;
+    position: absolute;
+    top: 278px;
+    left: 709px;
+    background-color: red;
+    width: 374px;
+    height: 140px;
+    border-radius: 13px;
+}
+
+
+.btnDir {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    top: 257px;
+    left: 130px;
+    background-color: #242524;
+    opacity: 0;
+    border: none;
+    border-radius: 13px;
+}
+
+.btnDir:active {
+
+    opacity: 1;
+}
+
+.btnDir.dir {
+    top: 660px;
+    left: 483px;
+    height: 30px !important;
+    width: 50px !important;
+}
+
+.btnDir.esq {
+    top: 660px;
+    left: 404px;
+    height: 30px !important;
+    width: 50px !important;
+
+}
+
+
+
+.btnDir.cim {
+
+    top: 611px;
+    left: 452px;
+    height: 50px !important;
+    width: 31px !important;
+}
+
+.btnDir.bai {
+    top: 687px;
+    left: 453px;
+    height: 50px !important;
+    width: 31px !important;
+}
+
+#leds {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 25px;
+    left: 203px;
+    width: 126px;
+}
+
+
+
+.led {
+    width: 31px;
+    height: 32px;
+    background-color: green;
+    border-radius: 25px;
+
+}
+
+.red {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    background-color: #cf0202;
+
+}
+
+.ledRedOn {
+    -webkit-animation: blinkRed 0.5s infinite;
+    -moz-animation: blinkRed 0.5s infinite;
+    -ms-animation: blinkRed 0.5s infinite;
+    -o-animation: blinkRed 0.5s infinite;
+    animation: blinkRed 0.5s infinite;
+
+
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+
+    background-color: #566f23;
+}
+
+.ledGreenOn {
+
+    background-color: #ABFF00;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+.btnPower {
+    position: absolute;
+    top: 593px;
+    left: 96px;
+    width: 62px;
+    height: 65px;
+    background-color: transparent;
+    border-radius: 310px;
+
+}
+
+.listPokemons {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0 50px 0 0;
+    transition: 1s;
+}
+
+.listPokemons img {
+    position: relative;
+}
+
+.listPokemons>div {
+    text-align: center;
+    width: 370px;
+
+    margin: 15px 0;
+}
+
+.listPokemons img[src="pokemons/poke_6.gif"] {
+
+    top: -50px;
+}
+
+.listPokemons img[src="pokemons/poke_70.gif"] {
+    top: 100px;
+
+}
+
+.listPokemons img[src="pokemons/poke_71.gif"] {
+    top: 65px;
+
+}
+
+.listPokemons img[src="pokemons/poke_144.gif"] {
+    top: -100px;
+
+}
+
+.listPokemons img[src="pokemons/poke_146.gif"] {
+    top: -100px;
+    left: -20px;
+}
+
+@keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
