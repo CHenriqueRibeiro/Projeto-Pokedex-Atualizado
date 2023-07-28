@@ -46,6 +46,15 @@
     filter: brightness(80%);
 }
 
+.imgRetorno {
+    position: absolute;
+    width: 17px;
+    ;
+    top: 533px;
+    z-index: 2;
+    left: 176px;
+}
+
 .imgBtnPower {
     position: absolute;
     width: 50px;
