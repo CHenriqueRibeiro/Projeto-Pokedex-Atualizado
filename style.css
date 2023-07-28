@@ -58,16 +58,15 @@
     position: absolute;
     width: 31px;
     height: 20px;
-    /* top: 705px;
-    left: 452px;*/
+
 }
 
 .baixo {
     position: absolute;
     width: 31px;
     height: 20px;
-    top: 705px;
-    left: 452px;
+    top: 710px;
+    left: 453px;
 }
 
 .cima {
@@ -83,8 +82,8 @@
     position: absolute;
     width: 31px;
     height: 20px;
-    top: 665px;
-    left: 500px;
+    top: 664px;
+    left: 498px;
     rotate: 270deg;
 }
 
@@ -92,8 +91,8 @@
     position: absolute;
     width: 31px;
     height: 20px;
-    top: 665px;
-    left: 402px;
+    top: 664px;
+    left: 408px;
     rotate: 90deg;
 }
 
