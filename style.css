@@ -2,7 +2,7 @@
     margin: 0;
     font-family: 'VT323', monospace;
     font-size: 30px;
-    color: white;
+    color: #3fbb3f;
 
 }
 
@@ -13,14 +13,14 @@
     left: -22px;
     height: 800px;
     width: 1161px;
-    background-image: url(/IMG-20230726-WA0107-removebg.png);
+    background-image: url(/imagens/IMG-20230726-WA0107-removebg.png);
     background-size: 100%;
     background-repeat: no-repeat;
 
 }
 
 .display {
-    background: url(/background\ ambiente.jpg) no-repeat;
+    background: url(/imagens/background\ ambiente.jpg) no-repeat;
     background-size: 100% 105%;
     display: flex;
     overflow: hidden;
@@ -124,15 +124,40 @@
 
 .displayDir {
     display: flex;
-    position: absolute;
+
+    position: relative;
     top: 270px;
     left: 701px;
-    background-color: red;
+    background-color: black;
     width: 374px;
     height: 140px;
     border-radius: 13px;
+    list-style: none;
+
 }
 
+
+
+.descriptionPoke.ligado {
+    position: absolute;
+    display: flex;
+    top: 7px;
+    left: 10px;
+    flex-direction: column;
+
+
+}
+
+.descriptionPoke.desligado {
+    position: absolute;
+    display: flex;
+    top: 7px;
+    left: 10px;
+
+    opacity: 0;
+    flex-direction: column;
+    transition: 0.5s;
+}
 
 
 .btnDir {
