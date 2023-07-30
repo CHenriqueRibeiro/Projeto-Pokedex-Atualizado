@@ -298,30 +298,43 @@
     margin: 15px 0;
 }
 
-.listPokemons img[src="pokemons/poke_6.gif"] {
-
+.listPokemons img[src="/pokemons/poke_6.gif"] {
     top: -50px;
 }
 
-.listPokemons img[src="pokemons/poke_70.gif"] {
+.listPokemons img[src="/pokemons/poke_70.gif"] {
     top: 100px;
 
 }
 
-.listPokemons img[src="pokemons/poke_71.gif"] {
+.listPokemons img[src="/pokemons/poke_71.gif"] {
     top: 65px;
 
 }
 
-.listPokemons img[src="pokemons/poke_144.gif"] {
+.listPokemons img[src="/pokemons/poke_144.gif"] {
     top: -100px;
 
 }
 
-.listPokemons img[src="pokemons/poke_146.gif"] {
+.listPokemons img[src="/pokemons/poke_146.gif"] {
     top: -100px;
     left: -20px;
+
 }
+
+.listPokemons img[src="/pokemons/poke_649.gif"] {
+    top: 70px;
+    left: 0px;
+    height: 120px;
+}
+
+.listPokemons img[src="/pokemons/poke_648.gif"] {
+    top: 75px;
+    left: 0px;
+    height: 100px;
+}
+
 
 @keyframes blinkRed {
     from {
